@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><img src="img/logoalur.png" alt="Logo Alura"></h1>
+    </header>
+
+    <main>
+        <section class="seccion1">
+            <textarea class="area" id="inputText" placeholder="Ingrese su texto aquí" cols="50" rows="10"></textarea>
+
+            <div class="advertencia">
+
+                <img class="iconito" src="img/iconito.png" width="17" height="17">
+
+                <aside class="letra-adver">Solo letras minúsculas y sin acentos.</aside>
+            </div>
+
+            <div class="contenedor-botones">
+
+                <input type="button" style="margin-right: 15px" class="boton-encriptar" value="Encriptar">
+
+                <input type="button" class="boton-desencriptar" value="Desencriptar">
+            </div>
+            
+        </section>
+
+        <section class="seccion2">
+            <div class="contenedor-muneco">
+                <img src="img/pinka.png" width="180" height="180" alt="Imagen detective">
+            </div>
+
+            <div class="contenedor-h3">
+                <h3>Ningún mensaje fue encontrado</h3>
+            </div>
+
+            <div class="contenedor-parrafo">
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+
+            <div class="contenedor-muneco-en">
+                <img src="img/pinka3.png" width="140" height="140" alt="Imagen detective sorprendido">
+            </div>
+
+            <div class="contenedor-resultado">
+                <h3 class="titulo-encriptado">Texto Encriptado</h3>
+                <p class="texto-resultado" id="textoResultado"></p>
+            </div>
+
+            <div class="contenedor-copiar">
+                <input type="button" class="boton-copiar" id="copiar" onclick="copyToClickBoard()" value="Copiar">
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+        <div class="sociales">
+            <a href="https://www.linkedin.com/in/brian-ar%C3%B3n-g%C3%B3mez-sequeiros/" target="_blank"><img src="img/lnk.png" width="28" height="28" alt="Logo Linkedin"></a>
+            <a href="https://github.com/Bagse" target="_blank"><img src="img/github.png" width="28" height="28" alt="Logo Github"></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>
