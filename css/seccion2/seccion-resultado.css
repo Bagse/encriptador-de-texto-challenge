@@ -1,0 +1,79 @@
+.contenedor-muneco-en{
+    box-sizing: border-box;
+    height: 20rem;
+    overflow: auto;
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.contenedor-resultado{
+    width: 100%;
+    height: 16rem;
+    font-size: 17px;
+    color: aliceblue;
+    box-sizing: border-box;
+    margin-top: -8.5rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.titulo-encriptado{
+    color: lightgray;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.texto-resultado{
+    background: #161a1d;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    font-family: monospace;
+    height: 13rem;
+    line-height: 1.2rem;
+    margin: 2rem 1rem;
+    padding-bottom: .5rem;
+    resize: none;
+    width: 92%;
+}
+
+
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    #ocultar-muneco{
+        display: none;
+    }
+    .contenedor-resultado{
+        height: 30rem;
+    }
+    .texto-resultado{
+        height: 22rem;
+        margin-top: -18rem;
+        font-size: 26px;
+        line-height: 1.8rem;
+        padding-bottom: 1rem;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    #ocultar-muneco{
+        display: none;
+    }
+    .contenedor-resultado{
+        height: 26rem;
+    }
+    .texto-resultado{
+        height: 25rem;
+        margin-top: -18rem;
+        font-size: 22px;
+        line-height: 1.6rem;
+        padding-bottom: 1rem;
+    }
+}
