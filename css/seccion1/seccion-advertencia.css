@@ -15,6 +15,8 @@
     font-weight: bold;
 }
 
+
+
 /*PC*/
 @media screen and (min-width: 768px) and (max-width: 1600px) {
     .iconito{
