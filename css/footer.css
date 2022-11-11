@@ -1,0 +1,59 @@
+.pie__pagina{
+    background: #161a1d;
+}
+
+.footer__principal{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__imagen{
+    width: 28px;
+    height: 28px;
+}
+
+.ocultar{
+    display: none;
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .footer__principal{
+        padding: .2rem;
+    }
+    .footer__imagen{
+        transition: 1s all;
+        height: 28px;
+        width: 28px;
+    }
+    .footer__imagen:hover{
+        transform: scale(1.1);
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .footer__principal{
+        padding: 1rem;
+        margin-top: 62rem;
+    }
+    .footer__imagen{
+        width: 36px;
+        height: 36px;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .footer__principal{
+        padding: .8rem;
+        margin-top: 70rem;
+    }
+    .footer__imagen{
+        width: 32px;
+        height: 32px;
+    }
+}

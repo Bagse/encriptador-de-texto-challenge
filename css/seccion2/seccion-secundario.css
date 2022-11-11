@@ -1,0 +1,118 @@
+.seccion2{
+    background: #161a1d;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px 10px black;
+    margin-right: 4rem;
+    overflow: hidden;
+    width: 44%;
+}
+
+.contenedor-muneco{
+    box-sizing: border-box;
+    height: 60%;
+    padding-top: 5rem;
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+}
+
+.contenedor-h3{
+    color: aliceblue;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: sans-serif;
+    height: 18%;
+    text-align: center;
+    padding-top: 5px auto;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.contenedor-parrafo{
+    color: aliceblue;
+    font-family: sans-serif;
+    height: 20%;
+    text-align: center;
+    margin-top: -2rem;
+    width: 100%;
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .seccion2{
+        margin: 4rem 2rem;
+        width: 100%;
+    }
+    .contenedor-muneco{
+        display: none;
+    }
+    .contenedor-h3{
+        height: 9rem;
+        padding-top: 3rem;
+    }
+    .ajustes-h3{
+        font-size: 32px;
+        line-height: 2rem;
+    }
+    .contenedor-parrafo{
+        margin-top: -8rem;
+        padding-top: 4rem;
+    }
+    .ajustes-parrafo{
+        font-size: 29px;
+        line-height: 2rem;
+    }
+
+    /* Ocultamos la imagen y el titulo encriptado */
+    #ocultar-muneco{
+        display: none;
+    }
+    #ocultar-titulo-encriptado{
+        display: none;
+    }
+    /*  */
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .seccion2{
+        margin: 2rem 2rem;
+        width: 100%;
+    }
+    .contenedor-muneco{
+        display: none;
+    }
+    .contenedor-h3{
+        height: 9rem;
+        padding-top: 2rem;
+    }
+    .ajustes-h3{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    .contenedor-parrafo{
+        margin-top: -1rem;
+        margin-bottom: -3rem;
+    }
+    .ajustes-parrafo{
+        font-size: 28px;
+        line-height: 2rem;
+    }
+
+    /* Ocultamos la imagen y el titulo encriptado */
+    #ocultar-muneco{
+        display: none;
+    }
+    #ocultar-titulo-encriptado{
+        display: none;
+    }
+    /*  */
+}

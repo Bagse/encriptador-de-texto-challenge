@@ -1,0 +1,57 @@
+.advertencia{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-family: system-ui;
+}
+
+.iconito{
+    float: left;
+    width: 17px; 
+    height: 17px;
+} 
+
+.letra-adver{
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .iconito{
+        margin-top: -1rem;
+        padding-left: 7rem;
+    }
+    .letra-adver{
+        font-size: 11px;
+        margin-top: -1rem;
+        padding-left: .3rem;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .iconito{
+        margin-top: -1rem;
+        padding-left: 2.5rem;
+    }
+    .letra-adver{
+        font-size: 13px;
+        margin-top: -1rem;
+        padding-left: .3rem;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .iconito{
+        margin-top: .1rem;
+        padding-left: 2rem;
+    }
+    .letra-adver{
+        font-size: 12px;
+        margin-top: .1rem;
+        padding-left: .3rem;
+    }
+}

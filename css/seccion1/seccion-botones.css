@@ -1,0 +1,95 @@
+.contenedor-botones{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-encriptar, .boton-desencriptar{
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-encriptar{
+    background-color: #124559;
+    color: aliceblue;
+}
+
+.boton-desencriptar{
+    background-color: #1e6091;
+    color: aliceblue;
+}
+
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .contenedor-botones{
+        margin-left: -4rem;
+        gap: 1.3rem;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        font-size: 16px;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        transition: 1.5s all;
+    }
+    .boton-encriptar:hover, .boton-desencriptar:hover{
+        transform: scale(1.1);
+    }
+    .boton-encriptar{
+        padding-left: 6.2rem;
+        padding-right: 6.2rem;
+    }
+    .boton-desencriptar{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .contenedor-botones{
+        gap: 1.50rem;
+        margin-top: 2rem;
+        margin-left: 2.6rem;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        font-size: 20px;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+    }
+    .boton-encriptar{
+        padding-left: 7.2rem;
+        padding-right: 7.2rem;
+    }
+    .boton-desencriptar{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .contenedor-botones{
+        flex-wrap: wrap;
+        gap: 1.50rem;
+        padding-left: -6rem;
+        margin-top: 1.5rem;
+    }
+    .boton-encriptar, .boton-desencriptar{
+        font-size: 18px;
+        padding-top: .9rem;
+        padding-bottom: .9rem;
+    }
+    .boton-encriptar{
+        padding-left: 7.2rem;
+        padding-right: 7.2rem;
+    }
+    .boton-desencriptar{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}

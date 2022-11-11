@@ -1,0 +1,58 @@
+.contenedor-copiar{
+    width: 100%;
+}
+
+.boton-copiar{
+    background: #124559;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 15px;
+    height: 2.5rem;
+    transition: 1.5s all;
+    margin: auto;
+    width: 40%;
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .contenedor-copiar{
+        height: 20%;
+        margin-top: 20px;
+    }
+    .boton-copiar:hover{
+        transform: scale(1.1);
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .contenedor-copiar{
+        height: 2rem;
+        margin-top: -5rem;
+        margin-bottom: 1.5rem;
+    }
+    .boton-copiar{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .contenedor-copiar{
+        height: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .boton-copiar{
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}

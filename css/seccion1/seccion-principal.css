@@ -1,0 +1,67 @@
+main{
+    display: flex;
+    height: 33rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.seccion1{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    
+}
+
+.area{
+    background: #161a1d;
+    box-shadow: 10px 10px 15px 10px black;
+    border: none;
+    color: aliceblue;
+    display: flex;
+    font-size: 25px;
+    line-height: 2rem;
+    padding: .8rem;
+    resize: none;
+    width: 74%; 
+}
+
+
+/* RESPONSIVE DESING */
+/*PC*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    main{
+        justify-content: space-between;
+    }
+    .area{
+        height: 20rem;
+        margin: .8rem 6rem;
+        width: 74%;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .area{
+        height: 30rem;
+        margin: 2rem 2rem;
+        width: 100%;
+    }
+}     
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .area{
+        height: 32rem;
+        margin: 1rem 1.5rem;
+        width: 80%;
+    }
+}
