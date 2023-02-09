@@ -2,7 +2,7 @@
 
 https://bagse.github.io/encriptador-de-texto-challenge/
 
-Challenge Encriptador de texto de Alura Latam + Oracle
+#Challenge Encriptador de texto de Alura Latam + Oracle
 
 Encriptador y desencriptador de texto (HTML, CSS, JavaScript)
 
